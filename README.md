@@ -16,27 +16,29 @@ Each plugin info contains the installation instruction preferably using `ya pkg`
 
 ## Contents
 
-- [Official](#official)
-- [Plugins](#plugins)
-  - [Previewers](#previewers)
-  - [Jumping](#jumping)
-  - [Bookmarks](#bookmarks)
-  - [File Actions](#file-actions)
-  - [Filter Enhancements](#filter-enhancements)
-  - [Enter Enhancements](#enter-enhancements)
-  - [General Command Enhancements](#general-command-enhancements)
-  - [UI enhancements](#ui-enhancements)
-  - [Git Utils](#git-utils)
-  - [Preloader Images](#preloader-images)
-  - [Fetchers](#fetchers)
-  - [Text Editor](#text-editor)
-  - [Shell Plugins](#shell-plugins)
-  - [Spotters](#spotters)
-  - [Utilities](#utilities)
-- [Flavors](#flavors)
-- [Themes](#themes)
-- [Community](#community)
-- [Check Out More](#check-out-more)
+- [Awesome Yazi ](#awesome-yazi-)
+  - [Contents](#contents)
+  - [Official](#official)
+  - [Plugins](#plugins)
+    - [Previewers](#previewers)
+    - [Jumping](#jumping)
+    - [Bookmarks](#bookmarks)
+    - [File Actions](#file-actions)
+    - [Filter Enhancements](#filter-enhancements)
+    - [Enter Enhancements](#enter-enhancements)
+    - [General Command Enhancements](#general-command-enhancements)
+    - [UI enhancements](#ui-enhancements)
+    - [Git Utils](#git-utils)
+    - [Preloader Images](#preloader-images)
+    - [Fetchers](#fetchers)
+    - [Text Editor](#text-editor)
+    - [Shell Plugins](#shell-plugins)
+    - [Spotters](#spotters)
+    - [Utilities](#utilities)
+  - [Flavors](#flavors)
+  - [Themes](#themes)
+  - [Community](#community)
+  - [Check Out More](#check-out-more)
 
 ## Official
 
@@ -94,6 +96,17 @@ ya pkg add wylie102/duckdb
 
 <details>
 <summary>
+<a href="https://github.com/tr1v3r/epub-preview.yazi">epub-preview.yazi</a> - Preview EPUB covers using PyMuPDF, so no Linux-only thumbnailer is needed and it works on macOS too.
+</summary>
+
+```bash
+ya pkg add tr1v3r/epub-preview
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://gitee.com/DreamMaoMao/epub.yazi">epub.yazi</a> - Plugin for Yazi to preview epub file.
 </summary>
 
@@ -126,6 +139,17 @@ ya pkg add ahkohd/eza-preview
 
 > Note:
 > The [original repo](https://github.com/sharklasers996/eza-preview.yazi) is currently unmaintained and does not work for Yazi v>=0.3.3.
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/DervexDev/f3d.yazi">f3d.yazi</a> - 3D model previewer with orbit, zoom and model stats, powered by <a href="https://f3d.app/">f3d</a>. Supports glTF, FBX, OBJ, STL, USD, STEP and more.
+</summary>
+
+```bash
+ya pkg add DervexDev/f3d
+```
 
 </details>
 
@@ -242,6 +266,26 @@ ya pkg add GrzegorzKozub/mdcat
 </details>
 
 <details>
+
+<summary>
+<a href="https://github.com/WhoSowSee/mdv-previewer.yazi">mdv-previewer</a> - A preview plugin for Text and Markdown files that uses <a href="https://github.com/WhoSowSee/mdv">mdv</a> to render content.
+</summary>
+
+```bash
+ya pkg add WhoSowSee/mdv-previewer
+
+# Manual installation
+
+# Linux/macOS
+git clone https://github.com/WhoSowSee/mdv-previewer.yazi.git ~/.config/yazi/plugins/mdv-previewer.yazi
+
+# Windows
+git clone https://github.com/WhoSowSee/mdv-previewer.yazi.git "$env:APPDATA\yazi\config\plugins\mdv-previewer.yazi"
+```
+
+</details>
+
+<details>
 <summary>
 <a href="https://github.com/boydaihungst/mediainfo.yazi">mediainfo.yazi</a> - Preview image, audio, video, subtitle and many more media types using `ffmpeg` and `mediainfo`.
 </summary>
@@ -251,6 +295,17 @@ ya pkg add boydaihungst/mediainfo
 ```
 
 > Note: [Ape/mediainfo.yazi](https://github.com/Ape/mediainfo.yazi) is archived and not maintained anymore.
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/passion0102/mermaid.yazi">mermaid.yazi</a> - Render <a href="https://mermaid.js.org/">Mermaid</a> diagrams inline in Markdown previews. Uses <a href="https://mermaid.ink">mermaid.ink</a> by default and falls back to <a href="https://github.com/mermaid-js/mermaid-cli">mermaid-cli</a> for offline rendering. Composes glow-rendered text with the mermaid image and supports a mode toggle (split / image / text) plus image-area zoom.
+</summary>
+
+```bash
+ya pkg add passion0102/mermaid
+```
 
 </details>
 
@@ -495,6 +550,17 @@ ya pkg add tasnimAlam/thumbnail
 
 <details>
 <summary>
+<a href="https://github.com/pakhromov/to-pdf-preview.yazi">to-pdf-preview.yazi</a> - Preview any file type convertible to PDF (using external tools), with page counter and scrolling.
+</summary>
+
+```bash
+ya pkg add pakhromov/to-pdf-preview
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/kirasok/torrent-preview.yazi">torrent-preview.yazi</a> - Preview "\*.torrent" files using <a href="https://github.com/transmission/transmission">transmission-cli</a>.
 </summary>
 
@@ -511,6 +577,28 @@ ya pkg add kirasok/torrent-preview
 
 ```bash
 ya pkg add ryanda/video-grid
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/ShikherVerma/yazi-plugins/tree/main/vscode-git-gutter.yazi">vscode-git-gutter.yazi</a> - Preview text and code with syntax highlighting, line numbers, and a VS Code style git change gutter.
+</summary>
+
+```bash
+ya pkg add ShikherVerma/yazi-plugins:vscode-git-gutter
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/xcursor-preview.yazi">xcursor-preview.yazi</a> - Preview xcursor files with metadata and frame-by-frame animation scrolling.
+</summary>
+
+```bash
+ya pkg add pakhromov/xcursor-preview
 ```
 
 </details>
@@ -628,7 +716,7 @@ ya pkg add lpanebr/yazi-plugins:first-non-directory
 
 <details>
 <summary>
-<a href="https://gitee.com/lpnh/fr.yazi">fg.yazi</a> - a Yazi plugin that integrates `fzf` with `bat` preview for `rg` search and `rga` preview for `rga` search.
+<a href="https://github.com/lpnh/fr.yazi">fr.yazi</a> - a Yazi plugin that integrates `fzf` with `bat` preview for `rg` search and `rga` preview for `rga` search.
 </summary>
 
 ```bash
@@ -644,6 +732,44 @@ ya pkg add lpnh/fr
 
 ```bash
 ya pkg add 'Tyarel8/goto-drives'
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/goto-file-dir.yazi">goto-file-dir.yazi</a> - Navigate to the directory of the hovered file when browsing search results.
+</summary>
+
+```bash
+ya pkg add pakhromov/goto-file-dir
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/skylightlim/gridview.yazi">gridview.yazi</a> - Browse the current folder's images as a thumbnail grid drawn by <a href="https://github.com/artemsen/swayimg">swayimg</a>, then jump to the one you pick (Wayland only).
+</summary>
+
+```bash
+# Requirements: swayimg 5.5 or newer (Wayland)
+ya pkg add skylightlim/gridview
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://tangled.org/ivelieu.quietism.art/hxjump.yazi">hxjump.yazi</a> - Helix-like two character jump to any visible file or folder
+</summary>
+
+```bash
+# Linux/macOS
+git clone https://tangled.org/ivelieu.quietism.art/hxjump.yazi ~/.config/yazi/plugins/hxjump.yazi
+
+# Windows
+git clone https://tangled.org/ivelieu.quietism.art/hxjump.yazi %AppData%\yazi\config\plugins\hxjump.yazi
 ```
 
 </details>
@@ -666,6 +792,17 @@ ya pkg add yazi-rs/plugins:jump-to-char
 
 ```bash
 ya pkg add AminurAlam/yazi-plugins:nextension
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/paste-navigate.yazi">paste-navigate.yazi</a> - Navigate to or create files and directories by pasting a path.
+</summary>
+
+```bash
+ya pkg add pakhromov/paste-navigate
 ```
 
 </details>
@@ -722,6 +859,17 @@ ya pkg add iynaix/time-travel
 </details>
 
 ### Bookmarks
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/autosave.yazi">autosave.yazi</a> - Session restore plugin that can be triggered on any action: tab switch/creation, directory change, or any other keybind, making it work even when exiting Yazi with a window manager/compositor keybind or shutting down the system without exiting Yazi.
+</summary>
+
+```bash
+ya pkg add pakhromov/autosave
+```
+
+</details>
 
 <details>
 <summary>
@@ -785,20 +933,23 @@ ya pkg add MasouShizuka/projects
 </details>
 
 <details>
+
 <summary>
-<a href="https://gitlab.com/WhoSowSee/whoosh.yazi">whoosh.yazi</a> - Advanced bookmark manager for Yazi file manager with persistent/temporary bookmarks, directory history, fuzzy search integration, and intelligent path truncation. Jump between your favorite locations instantly across all platforms.
+<a href="https://github.com/WhoSowSee/whoosh.yazi">whoosh.yazi</a> - Advanced bookmark manager for Yazi file manager with persistent/temporary bookmarks, directory history, fuzzy search integration, and intelligent path truncation. Jump between your favorite locations instantly across all platforms.
 </summary>
 
 ```bash
+ya pkg add WhoSowSee/whoosh
+```
+
+```bash
 # Manual installation
-## As the repo has migrated to Gitlab, currently only the manual installation command works.
 
 # Linux/macOS
-git clone https://gitlab.com/WhoSowSee/whoosh.yazi.git ~/.config/yazi/plugins/whoosh.yazi
+git clone https://github.com/WhoSowSee/whoosh.yazi.git ~/.config/yazi/plugins/whoosh.yazi
 
 # Windows
-git clone https://gitlab.com/WhoSowSee/whoosh.yazi.git "C:\Users\username\AppData\Roaming\yazi\config\plugins\whoosh.yazi"
-
+git clone https://github.com/WhoSowSee/whoosh.yazi.git $env:APPDATA\yazi\config\plugins\whoosh.yazi
 ```
 
 </details>
@@ -823,6 +974,17 @@ ya pkg add h-hg/yamb
 
 ```bash
 ya pkg add AnirudhG07/archivemount
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/batch-rename-gui.yazi">batch-rename-gui.yazi</a> - Rename multiple selected files in your GUI text editor.
+</summary>
+
+```bash
+ya pkg add pakhromov/batch-rename-gui
 ```
 
 </details>
@@ -864,11 +1026,33 @@ ya pkg add atareao/convert
 
 <details>
 <summary>
+<a href="https://github.com/tasnimAlam/croc-send.yazi">croc-send.yazi</a> - Send selected files using croc
+</summary>
+
+```bash
+ya pkg add tasnimAlam/croc-send
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/yazi-rs/plugins/tree/main/diff.yazi">diff.yazi</a> - Diff the selected file with the hovered file, create a living patch, and copy it to the clipboard.
 </summary>
 
 ```bash
 ya pkg add yazi-rs/plugins:diff
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/glassjaw/difftool.yazi">difftool.yazi</a> - Compare two selected files or directories with your configured `git difftool` (Meld, VS Code, Beyond Compare, vimdiff, …).
+</summary>
+
+```bash
+ya pkg add glassjaw/difftool
 ```
 
 </details>
@@ -886,6 +1070,17 @@ ya pkg add mshnwq/dupes
 
 <details>
 <summary>
+<a href="https://github.com/lesliek-dev/encapsulate.yazi">encapsulate.yazi</a> - Move individual selected files into their own self-named directories.
+</summary>
+
+```bash
+ya pkg add lesliek-dev/encapsulate
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/BBOOXX/file-actions.yazi">file-actions.yazi</a> - A Yazi plugin that allows users to perform actions on selected files using custom scripts.
 </summary>
 
@@ -897,11 +1092,11 @@ ya pkg add BBOOXX/file-actions
 
 <details>
 <summary>
-<a href="https://github.com/dawsers/fuse-archive.yazi">fuse-archive.yazi</a> - Transparently mount and unmount archives in read-only mode while navigating in Yazi.
+<a href="https://github.com/boydaihungst/fuse-archive.yazi">fuse-archive.yazi</a> - Transparently mount and unmount archives in read-only mode while navigating in Yazi.
 </summary>
 
 ```bash
-ya pkg add dawsers/fuse-archive
+ya pkg add boydaihungst/fuse-archive
 ```
 
 </details>
@@ -913,6 +1108,17 @@ ya pkg add dawsers/fuse-archive
 
 ```bash
 ya pkg add Deepak22903/kdeconnect-send
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/pakhromov/localsend.yazi">localsend.yazi</a> - Send selected files over the local network using localsend-go.
+</summary>
+
+```bash
+ya pkg add pakhromov/localsend
 ```
 
 </details>
@@ -931,6 +1137,32 @@ ya pkg add yazi-rs/plugins:mount
 
 <details>
 <summary>
+<a href="https://github.com/PHONE1X/lsblk-mount.yazi">lsblk-mount.yazi</a> - A fork of the official mount.yazi with lsblk-based device discovery, a mountpoint column, and error notifications.
+</summary>
+
+```bash
+ya pkg add PHONE1X/lsblk-mount.yazi
+```
+
+</details>
+
+
+<details>
+
+<summary>
+<a href="https://github.com/goldfix/yazi-plugin-restic">Restic Plugin</a> - Yazi plugin to browse and restore Restic snapshots without FUSE. Snapshots appear as real folders and loaded lazily; files are fetched only on demand. Metadata preview, multi-select restore, SFTP / Cloud Storage / Rclone / etc. support.
+</summary>
+
+```bash
+ya pkg add goldfix/yazi-plugin-restic:restic
+```
+
+</details>
+
+
+
+<details>
+<summary>
 <a href="https://github.com/SL-RU/mount.yazi">SL-RU/mount.yazi</a> - User interface for convinient mounting volumes using udisks2.
 </summary>
 You need to install mmtui binary first, check repository for additional information.
@@ -938,6 +1170,22 @@ You need to install mmtui binary first, check repository for additional informat
 ```bash
 # Requirements: mmtui, udisks2, yazi >= 0.4
 ya pkg add SL-RU/mount
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/skylightlim/omniconvert.yazi">omniconvert.yazi</a> - A conversion menu that offers only the formats the hovered or selected files can actually become (images, audio, video, PDF and documents), using <a href="https://imagemagick.org/">ImageMagick</a>, <a href="https://ffmpeg.org/">FFmpeg</a> and <a href="https://www.libreoffice.org/">LibreOffice</a>.
+</summary>
+
+```bash
+ya pkg add skylightlim/omniconvert
+
+# The plugin also needs its omniconvert script on your PATH:
+mkdir -p ~/.local/bin
+curl -fsSL https://raw.githubusercontent.com/skylightlim/omniconvert.yazi/main/omniconvert \
+  -o ~/.local/bin/omniconvert && chmod +x ~/.local/bin/omniconvert
 ```
 
 </details>
@@ -966,6 +1214,17 @@ ya pkg add lmnek/pandoc
 
 <details>
 <summary>
+<a href="https://github.com/nmetschke/recents.yazi">recents.yazi</a> - Recently used files using the <a href="https://www.freedesktop.org/wiki/Specifications/desktop-bookmark-spec">desktop-bookmark-spec</a> (Linux only), supporting viewing, adding and removing.
+</summary>
+
+```bash
+ya pkg add nmetschke/recents
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/uhs-robert/recycle-bin.yazi">recycle-bin.yazi</a> - Manage your Trash from Yazi: browse contents, restore or delete selected items, empty by age, or empty completely using trash-cli.
 </summary>
 
@@ -978,11 +1237,35 @@ ya pkg add uhs-robert/recycle-bin.yazi
 
 <details>
 <summary>
+<a href="https://github.com/volker-schukai/red-table/tree/main/red-table.yazi">red-table.yazi</a> - Select images visually in red-table and return the confirmed selection to Yazi.
+</summary>
+
+```bash
+# Requirements: red-table, Unix, Yazi >= 26.5.6
+ya pkg add volker-schukai/red-table:red-table
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/Ape/reflink.yazi">reflink.yazi</a> - Create reflinks to files.
 </summary>
 
 ```bash
 ya pkg add Ape/reflink
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/superb-striker/retarget-link.yazi">retarget-link.yazi</a> - Edit symlink targets inline, just like renaming files.
+</summary>
+
+```bash
+# Requirements: Unix-like system with readlink and ln
+ya pkg add superb-striker/retarget-link
 ```
 
 </details>
@@ -1128,6 +1411,19 @@ ya pkg add nsavvide/duck-radar
 
 </details>
 
+<details>
+<summary>
+<a href="https://github.com/bmcszk/yazi-album-plugin">yazi-album-plugin.yazi</a> - Upload selected photos to a cloud album via <a href="https://rclone.org/">rclone</a> through a 3-step fzf wizard (provider → remote → album; existing or create-new).
+</summary>
+
+
+```bash
+ya pkg add bmcszk/yazi-album-plugin
+```
+
+
+</details>
+
 ### Filter Enhancements
 
 <details>
@@ -1257,6 +1553,17 @@ ya pkg add boydaihungst/save-clipboard-to-file
 
 <details>
 <summary>
+<a href="https://github.com/pakhromov/smart-tab.yazi">smart-tab.yazi</a> - Switch to the next tab, or create a new one if already on the last tab.
+</summary>
+
+```bash
+ya pkg add pakhromov/smart-tab
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/TD-Sky/sudo.yazi">sudo.yazi</a> - Call `sudo` in yazi.
 </summary>
 
@@ -1318,11 +1625,33 @@ ya pkg add grappas/wl-clipboard
 
 <details>
 <summary>
+<a href="https://github.com/alchezar/age-badge.yazi">age-badge.yazi</a> - A color-coded badge showing each file's age, from red (recent) to violet (old). Inspired by OneCommander.
+</summary>
+
+```bash
+ya pkg add alchezar/age-badge
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/josephschmitt/auto-layout.yazi">auto-layout.yazi</a> - Automatically change number of columns based on available width.
 </summary>
 
 ```bash
 ya pkg add josephschmitt/auto-layout
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/Geronfir/Bifold.yazi">bifold.yazi</a> - Dual-pane view by splitting the screen between two tabs, with a runtime flip between side-by-side and stacked layouts, pane resizing, and cross-pane copy/move. Fork of split-tabs.yazi with bug fixes.
+</summary>
+
+```bash
+ya pkg add Geronfir/bifold
 ```
 
 </details>
@@ -1432,6 +1761,17 @@ ya pkg add yazi-rs/plugins:no-status
 
 <details>
 <summary>
+<a href="https://github.com/ShikherVerma/yazi-plugins/tree/main/mobile-auto-layout.yazi">mobile-auto-layout.yazi</a> - Adapt column widths to content and screen size, with a reading mode that widens the preview, built for phone-narrow terminals.
+</summary>
+
+```bash
+ya pkg add ShikherVerma/yazi-plugins:mobile-auto-layout
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/saumyajyoti/omp.yazi">omp.yazi</a> - oh-my-posh prompt plugin for Yazi.
 </summary>
 
@@ -1487,11 +1827,33 @@ ya pkg add Ape/simple-status
 
 <details>
 <summary>
+<a href="https://github.com/terrakok/split-tabs.yazi">split-tabs.yazi</a> - Provides a dual-pane view by splitting the screen between two tabs.
+</summary>
+
+```bash
+ya pkg add terrakok/split-tabs
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/Rolv-Apneseth/starship.yazi">starship.yazi</a> - Starship prompt plugin for Yazi.
 </summary>
 
 ```bash
 ya pkg add Rolv-Apneseth/starship
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/yohkuri/supaline.yazi">supaline.yazi</a> - Turn the linemode into as many columns as you like (size, timestamps, permissions, owner and more, or your own), each styled its own way, with gradients across the folder.
+</summary>
+
+```bash
+ya pkg add yohkuri/supaline
 ```
 
 </details>
@@ -1615,11 +1977,33 @@ ya pkg add Lil-Dank/lazygit
 
 <details>
 <summary>
+<a href="https://github.com/ThomasVanRiel/repo-status.yazi">repo-status.yazi</a> - Show the branch and Git status next to every repository directory in the file list.
+</summary>
+  
+```bash
+ya pkg add ThomasVanRiel/repo-status
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/yazi-rs/plugins/tree/main/vcs-files.yazi">vcs-files.yazi</a> - Show Git file changes in Yazi.
 </summary>
 
 ```bash
 ya pkg add yazi-rs/plugins:vcs-files
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/ShikherVerma/yazi-plugins/tree/main/vscode-git-colors.yazi">vscode-git-colors.yazi</a> - Color file names by their git status, VS Code style, with status letters for files and dot badges for directories in every column.
+</summary>
+
+```bash
+ya pkg add ShikherVerma/yazi-plugins:vscode-git-colors
 ```
 
 </details>
@@ -1813,11 +2197,33 @@ ya pkg add AnirudhG07/custom-shell
 
 <details>
 <summary>
+<a href="https://github.com/tr1v3r/dsh-tui.yazi">dsh-tui.yazi</a> - Launch dsh-TUI with explicitly selected Yazi files appended to an editable prompt.
+</summary>
+
+```bash
+ya pkg add tr1v3r/dsh-tui
+```
+
+</details>
+
+<details>
+<summary>
 <a href="https://github.com/Tyarel8/nu.yazi">nu.yazi</a> - A plugin for yazi to execute `nu` code.
 </summary>
 
 ```bash
 ya pkg add Tyarel8/nu
+```
+
+</details>
+
+<details>
+<summary>
+<a href="https://github.com/alastairsounds/yazi-plugins/tree/main/shell-peek.yazi">shell-peek.yazi</a> - Peek a shell command's output as a toast without leaving the file list.
+</summary>
+
+```bash
+ya pkg add alastairsounds/yazi-plugins:shell-peek
 ```
 
 </details>
@@ -2165,6 +2571,19 @@ Manual Installation Required.
 </details>
 
 ## Community
+<details>
+<summary>
+<a href="https://github.com/PHONE1X/far-too-yazi">far-too-yazi</a> - FAR Manager / Norton Commander style dual-pane config distribution for yazi (AstroNvim-style, not a single plugin) — instant vim<->FAR mode switching, conflict-aware cross-pane transfers, KDE Connect phone browsing.
+</summary>
+
+```bash
+git clone https://github.com/PHONE1X/far-too-yazi.git
+cd far-too-yazi
+./install.sh
+```
+
+</details>
+
 
 - [Discord (English mainly)](https://discord.gg/qfADduSdJu)
 - [Telegram (Chinese mainly)](https://t.me/yazi_rs)
